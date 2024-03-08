@@ -2,6 +2,7 @@ import React from 'react';
 import NavRoutes from '../NavRoutes/NavRoutes';
 
 const NavBar = () => {
+
     return (
         <>
             <div className="navbar bg-base-100">

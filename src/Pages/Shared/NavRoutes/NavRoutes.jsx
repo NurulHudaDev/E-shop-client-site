@@ -10,7 +10,7 @@ const NavRoutes = () => {
         <li><Link to='/contract'>Contract</Link></li>
         <li><Link to='/login'>LogIn</Link></li>
     </>
-
+   
     return (
         <>
             <div className="navbar bg-slate-950 text-white">
@@ -31,7 +31,7 @@ const NavRoutes = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn text-base text-white">Card <FaShoppingCart /></a>
+                    <a className="btn text-base text-white" onClick={() => document.getElementById('my_modal_1').showModal()}>Card <FaShoppingCart /></a>
                 </div>
             </div>
         </>
