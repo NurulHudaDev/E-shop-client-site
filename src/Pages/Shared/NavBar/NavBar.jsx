@@ -1,7 +1,7 @@
 import React from 'react';
 import NavRoutes from '../NavRoutes/NavRoutes';
 
-const NavBar = () => {
+const NavBar = ({count}) => {
 
     return (
         <>
@@ -32,7 +32,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <NavRoutes></NavRoutes>
+            <NavRoutes count={count}></NavRoutes>
         </>
     );
 };

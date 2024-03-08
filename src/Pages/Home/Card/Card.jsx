@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({data, handleAddToCard}) => {
+const Card = ({data, handleAddToCard, setCardCount2}) => {
 
     const {id, img, name} = data;
 
@@ -12,7 +12,7 @@ const Card = ({data, handleAddToCard}) => {
         <div className="card-body items-center text-center">
           <h2 className="card-title">{name}</h2>
           <div className="card-actions">
-            <button onClick={() => handleAddToCard(data)} className="btn btn-primary">Add Cord</button>
+            <button onClick={() => handleAddToCard(data)} className="btn btn-primary"><button onClick={setCardCount2}>Add Cord</button></button>
             <button className="btn btn-primary">Details</button>
           </div>
         </div>

@@ -3,7 +3,7 @@ import Banner from '../Banner/Banner';
 import Card from '../Card/Card';
 import { IoMdClose } from "react-icons/io";
 
-const Home = () => {
+const Home = ({setCardCount1}) => {
 
     const [guns, setGuns] = useState([]);
     const [card, setCard] = useState([]);
@@ -44,7 +44,7 @@ const Home = () => {
             <div className='w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {
                     guns.map((gun) => (
-                        <Card key={gun.id} data={gun} handleAddToCard={handleAddToCard}></Card>
+                        <Card key={gun.id} data={gun} handleAddToCard={handleAddToCard} setCardCount2={setCardCount1}></Card>
                     ))}
             </div>
         </div>

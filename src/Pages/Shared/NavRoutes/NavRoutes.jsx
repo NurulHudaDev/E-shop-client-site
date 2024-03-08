@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from "react-icons/fa";
 
-const NavRoutes = () => {
+const NavRoutes = ({count}) => {
 
     const NavOptions = <>
         <li><Link to='/'>Home</Link></li>
@@ -31,7 +31,7 @@ const NavRoutes = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn text-base text-white" onClick={() => document.getElementById('my_modal_1').showModal()}>Card <FaShoppingCart /></a>
+                    <a className="btn text-base text-white" onClick={() => document.getElementById('my_modal_1').showModal()}>Card <FaShoppingCart /><sup>{count}</sup></a>
                 </div>
             </div>
         </>
