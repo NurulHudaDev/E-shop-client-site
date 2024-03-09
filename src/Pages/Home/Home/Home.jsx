@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Banner from '../Banner/Banner';
 import Card from '../Card/Card';
 import { IoMdClose } from "react-icons/io";
+import ShopModel from '../../ShopModel/ShopModel';
 
 const Home = ({setCardCount1}) => {
 
@@ -33,7 +34,7 @@ const Home = ({setCardCount1}) => {
                         <hi>
                             {
                                 card.map((item) => (
-                                    <h2 key={item.id}>{item.name}</h2>
+                                    <ShopModel  key={item.id} item={item}></ShopModel>
                                 ))
                             }
                         </hi>
